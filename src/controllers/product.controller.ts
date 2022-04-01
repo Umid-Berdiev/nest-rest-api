@@ -16,7 +16,8 @@ import {
 import { Request, Response } from 'express';
 import { Product } from 'src/schemas/product.schema';
 import { ProductService } from 'src/services/product/product.service';
-import { CreateProductDto, UpdateProductDto } from '../dtos/product.dto';
+import { CreateProductDto } from '../dto/create-product.dto';
+import { UpdateProductDto } from '../dto/update-product.dto';
 
 @Controller('product')
 export class ProductController {

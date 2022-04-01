@@ -1,8 +1,8 @@
 import { Injectable } from '@nestjs/common';
 import { Model } from 'mongoose';
 import { InjectModel } from '@nestjs/mongoose';
-// import { Product } from 'src/interfaces/product.interface';
-import { CreateProductDto, UpdateProductDto } from 'src/dtos/product.dto';
+import { CreateProductDto } from 'src/dto/create-product.dto';
+import { UpdateProductDto } from 'src/dto/update-product.dto';
 import { Product, ProductDocument } from 'src/schemas/product.schema';
 
 @Injectable()
